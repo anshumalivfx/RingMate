@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A473B3129AFDE490061A5FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3029AFDE490061A5FD /* Extensions.swift */; };
+		7A473B3329AFDEEB0061A5FD /* NoInsetHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3229AFDEEB0061A5FD /* NoInsetHostingView.swift */; };
+		7A473B3529AFDF070061A5FD /* NSView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3429AFDF070061A5FD /* NSView+Image.swift */; };
+		7A473B3729AFDF980061A5FD /* NSImagetoJPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3629AFDF980061A5FD /* NSImagetoJPEG.swift */; };
+		7A473B3929B093010061A5FD /* AuthMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3829B093010061A5FD /* AuthMethods.swift */; };
+		7A48AB0629AB4BB50077C641 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A48AB0529AB4BB50077C641 /* GoogleService-Info.plist */; };
+		7A7BD81A29AA65F600BC248C /* RingMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD81929AA65F600BC248C /* RingMateApp.swift */; };
+		7A7BD81C29AA65F600BC248C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD81B29AA65F600BC248C /* ContentView.swift */; };
+		7A7BD81E29AA65F800BC248C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BD81D29AA65F800BC248C /* Assets.xcassets */; };
+		7A7BD82129AA65F800BC248C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BD82029AA65F800BC248C /* Preview Assets.xcassets */; };
+		7A7BD82329AA65F800BC248C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD82229AA65F800BC248C /* Persistence.swift */; };
+		7A7BD82629AA65F800BC248C /* RingMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD82429AA65F800BC248C /* RingMate.xcdatamodeld */; };
+		7A7BD82F29AA672C00BC248C /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD82E29AA672C00BC248C /* LoginPageView.swift */; };
+		7A7BD83229AA69E600BC248C /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD83129AA69E600BC248C /* Blur.swift */; };
+		7A7BD83429AA6D1A00BC248C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD83329AA6D1A00BC248C /* RegistrationView.swift */; };
+		7A7BD83929AA6D4300BC248C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD83829AA6D4300BC248C /* LoginViewController.m */; };
+		7A9EB14229C21A3A000DC271 /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EB14129C21A3A000DC271 /* AddFriendView.swift */; };
+		7A9EB14629C21A85000DC271 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EB14529C21A85000DC271 /* NewMessageView.swift */; };
+		7AA0FB0729B2207800BA9A09 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0629B2207800BA9A09 /* MainPageView.swift */; };
+		7AA0FB1029B2215200BA9A09 /* ChatCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0829B2215200BA9A09 /* ChatCards.swift */; };
+		7AA0FB1129B2215200BA9A09 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0929B2215200BA9A09 /* ChatsView.swift */; };
+		7AA0FB1229B2215200BA9A09 /* NewConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0A29B2215200BA9A09 /* NewConversationView.swift */; };
+		7AA0FB1329B2215200BA9A09 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0B29B2215200BA9A09 /* SettingsView.swift */; };
+		7AA0FB1429B2215200BA9A09 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0C29B2215200BA9A09 /* StatusView.swift */; };
+		7AA0FB1529B2215200BA9A09 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0D29B2215200BA9A09 /* Conversation.swift */; };
+		7AA0FB1629B2215200BA9A09 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0E29B2215200BA9A09 /* CommunityView.swift */; };
+		7AA0FB1729B2215200BA9A09 /* ViewSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB0F29B2215200BA9A09 /* ViewSwitcher.swift */; };
+		7AA0FB1929B2216100BA9A09 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB1829B2216100BA9A09 /* ChatViewModel.swift */; };
+		7AA0FB1D29B2218100BA9A09 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB1B29B2218100BA9A09 /* TabButton.swift */; };
+		7AA0FB1E29B2218100BA9A09 /* ExpandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB1C29B2218100BA9A09 /* ExpandView.swift */; };
+		7AA0FB2229B221B700BA9A09 /* RecentChats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB2029B221B700BA9A09 /* RecentChats.swift */; };
+		7AA0FB2329B221B700BA9A09 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0FB2129B221B700BA9A09 /* Message.swift */; };
+		7AEED66129B2257200D024D6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEED66029B2257200D024D6 /* AuthManager.swift */; };
+		C48036AFD7CDB6F7190A1D0E /* libPods-RingMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCB0F2D97001045745B847 /* libPods-RingMate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7AC9DE5C29ABC38900F96460 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		621CE562101CE85B141B09CD /* Pods-RingMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingMate.release.xcconfig"; path = "Target Support Files/Pods-RingMate/Pods-RingMate.release.xcconfig"; sourceTree = "<group>"; };
+		7A473B3029AFDE490061A5FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7A473B3229AFDEEB0061A5FD /* NoInsetHostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInsetHostingView.swift; sourceTree = "<group>"; };
+		7A473B3429AFDF070061A5FD /* NSView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Image.swift"; sourceTree = "<group>"; };
+		7A473B3629AFDF980061A5FD /* NSImagetoJPEG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImagetoJPEG.swift; sourceTree = "<group>"; };
+		7A473B3829B093010061A5FD /* AuthMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethods.swift; sourceTree = "<group>"; };
+		7A48AB0529AB4BB50077C641 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A7BD81629AA65F600BC248C /* RingMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7BD81929AA65F600BC248C /* RingMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingMateApp.swift; sourceTree = "<group>"; };
+		7A7BD81B29AA65F600BC248C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A7BD81D29AA65F800BC248C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A7BD82029AA65F800BC248C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A7BD82229AA65F800BC248C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7A7BD82529AA65F800BC248C /* RingMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RingMate.xcdatamodel; sourceTree = "<group>"; };
+		7A7BD82729AA65F800BC248C /* RingMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingMate.entitlements; sourceTree = "<group>"; };
+		7A7BD82E29AA672C00BC248C /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		7A7BD83129AA69E600BC248C /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		7A7BD83329AA6D1A00BC248C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		7A7BD83629AA6D4200BC248C /* RingMate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RingMate-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A7BD83729AA6D4300BC248C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7A7BD83829AA6D4300BC248C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7A7D6FBA29AFD2190019C350 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7A9EB14129C21A3A000DC271 /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
+		7A9EB14529C21A85000DC271 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		7AA0FB0629B2207800BA9A09 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		7AA0FB0829B2215200BA9A09 /* ChatCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCards.swift; sourceTree = "<group>"; };
+		7AA0FB0929B2215200BA9A09 /* ChatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		7AA0FB0A29B2215200BA9A09 /* NewConversationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewConversationView.swift; sourceTree = "<group>"; };
+		7AA0FB0B29B2215200BA9A09 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7AA0FB0C29B2215200BA9A09 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		7AA0FB0D29B2215200BA9A09 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		7AA0FB0E29B2215200BA9A09 /* CommunityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		7AA0FB0F29B2215200BA9A09 /* ViewSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSwitcher.swift; sourceTree = "<group>"; };
+		7AA0FB1829B2216100BA9A09 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		7AA0FB1B29B2218100BA9A09 /* TabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		7AA0FB1C29B2218100BA9A09 /* ExpandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandView.swift; sourceTree = "<group>"; };
+		7AA0FB2029B221B700BA9A09 /* RecentChats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChats.swift; sourceTree = "<group>"; };
+		7AA0FB2129B221B700BA9A09 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7AEED66029B2257200D024D6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A4CCB0F2D97001045745B847 /* libPods-RingMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RingMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB46B6E69F65B88D7E8E1DCD /* Pods-RingMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingMate.debug.xcconfig"; path = "Target Support Files/Pods-RingMate/Pods-RingMate.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A7BD81329AA65F600BC248C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48036AFD7CDB6F7190A1D0E /* libPods-RingMate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6928E2388B0B0442B3A6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CCB0F2D97001045745B847 /* libPods-RingMate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A473B2D29AFDC020061A5FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A473B3629AFDF980061A5FD /* NSImagetoJPEG.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A473B2E29AFDC130061A5FD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7A473B3829B093010061A5FD /* AuthMethods.swift */,
+				7AA0FB1829B2216100BA9A09 /* ChatViewModel.swift */,
+				7AEED66029B2257200D024D6 /* AuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7A473B2F29AFDE3B0061A5FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A473B3029AFDE490061A5FD /* Extensions.swift */,
+				7A473B3229AFDEEB0061A5FD /* NoInsetHostingView.swift */,
+				7A473B3429AFDF070061A5FD /* NSView+Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A7BD80D29AA65F600BC248C = {
+			isa = PBXGroup;
+			children = (
+				7A7D6FBA29AFD2190019C350 /* Podfile */,
+				7A7BD81829AA65F600BC248C /* RingMate */,
+				7A7BD81729AA65F600BC248C /* Products */,
+				7CD957564AA5389A2B4B4BE8 /* Pods */,
+				0F6928E2388B0B0442B3A6F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A7BD81729AA65F600BC248C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7BD81629AA65F600BC248C /* RingMate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A7BD81829AA65F600BC248C /* RingMate */ = {
+			isa = PBXGroup;
+			children = (
+				7A7BD83529AA6D2300BC248C /* Headers */,
+				7AA0FB1F29B221AD00BA9A09 /* DataModels */,
+				7AA0FB1A29B2217300BA9A09 /* Components */,
+				7A473B2F29AFDE3B0061A5FD /* Extensions */,
+				7A473B2E29AFDC130061A5FD /* Auth */,
+				7A473B2D29AFDC020061A5FD /* Models */,
+				7A7BD83029AA69D700BC248C /* FiltersAndEffects */,
+				7A7BD82D29AA671400BC248C /* Views */,
+				7A7BD81929AA65F600BC248C /* RingMateApp.swift */,
+				7A7BD81D29AA65F800BC248C /* Assets.xcassets */,
+				7A7BD82229AA65F800BC248C /* Persistence.swift */,
+				7A48AB0529AB4BB50077C641 /* GoogleService-Info.plist */,
+				7A7BD82729AA65F800BC248C /* RingMate.entitlements */,
+				7A7BD82429AA65F800BC248C /* RingMate.xcdatamodeld */,
+				7A7BD81F29AA65F800BC248C /* Preview Content */,
+			);
+			path = RingMate;
+			sourceTree = "<group>";
+		};
+		7A7BD81F29AA65F800BC248C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A7BD82029AA65F800BC248C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A7BD82D29AA671400BC248C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A9EB14029C21A24000DC271 /* Friends */,
+				7A7BD81B29AA65F600BC248C /* ContentView.swift */,
+				7A7BD82E29AA672C00BC248C /* LoginPageView.swift */,
+				7AA0FB0829B2215200BA9A09 /* ChatCards.swift */,
+				7AA0FB0929B2215200BA9A09 /* ChatsView.swift */,
+				7AA0FB0E29B2215200BA9A09 /* CommunityView.swift */,
+				7AA0FB0D29B2215200BA9A09 /* Conversation.swift */,
+				7AA0FB0A29B2215200BA9A09 /* NewConversationView.swift */,
+				7AA0FB0B29B2215200BA9A09 /* SettingsView.swift */,
+				7AA0FB0C29B2215200BA9A09 /* StatusView.swift */,
+				7AA0FB0F29B2215200BA9A09 /* ViewSwitcher.swift */,
+				7A7BD83329AA6D1A00BC248C /* RegistrationView.swift */,
+				7A7BD83829AA6D4300BC248C /* LoginViewController.m */,
+				7AA0FB0629B2207800BA9A09 /* MainPageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A7BD83029AA69D700BC248C /* FiltersAndEffects */ = {
+			isa = PBXGroup;
+			children = (
+				7A7BD83129AA69E600BC248C /* Blur.swift */,
+			);
+			path = FiltersAndEffects;
+			sourceTree = "<group>";
+		};
+		7A7BD83529AA6D2300BC248C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7A7BD83729AA6D4300BC248C /* LoginViewController.h */,
+				7A7BD83629AA6D4200BC248C /* RingMate-Bridging-Header.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		7A9EB14029C21A24000DC271 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				7A9EB14729C225F6000DC271 /* FriendsRequests */,
+				7A9EB14129C21A3A000DC271 /* AddFriendView.swift */,
+				7A9EB14529C21A85000DC271 /* NewMessageView.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		7A9EB14729C225F6000DC271 /* FriendsRequests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendsRequests;
+			sourceTree = "<group>";
+		};
+		7AA0FB1A29B2217300BA9A09 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7AA0FB1C29B2218100BA9A09 /* ExpandView.swift */,
+				7AA0FB1B29B2218100BA9A09 /* TabButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7AA0FB1F29B221AD00BA9A09 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				7AA0FB2129B221B700BA9A09 /* Message.swift */,
+				7AA0FB2029B221B700BA9A09 /* RecentChats.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		7CD957564AA5389A2B4B4BE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB46B6E69F65B88D7E8E1DCD /* Pods-RingMate.debug.xcconfig */,
+				621CE562101CE85B141B09CD /* Pods-RingMate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A7BD81529AA65F600BC248C /* RingMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7BD82A29AA65F800BC248C /* Build configuration list for PBXNativeTarget "RingMate" */;
+			buildPhases = (
+				1FF35918C1EBDA367AC2BC80 /* [CP] Check Pods Manifest.lock */,
+				7A7BD81229AA65F600BC248C /* Sources */,
+				7A7BD81329AA65F600BC248C /* Frameworks */,
+				7A7BD81429AA65F600BC248C /* Resources */,
+				7AC9DE5C29ABC38900F96460 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingMate;
+			productName = RingMate;
+			productReference = 7A7BD81629AA65F600BC248C /* RingMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A7BD80E29AA65F600BC248C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7A7BD81529AA65F600BC248C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = 7A7BD81129AA65F600BC248C /* Build configuration list for PBXProject "RingMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A7BD80D29AA65F600BC248C;
+			productRefGroup = 7A7BD81729AA65F600BC248C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A7BD81529AA65F600BC248C /* RingMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A7BD81429AA65F600BC248C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7BD82129AA65F800BC248C /* Preview Assets.xcassets in Resources */,
+				7A48AB0629AB4BB50077C641 /* GoogleService-Info.plist in Resources */,
+				7A7BD81E29AA65F800BC248C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF35918C1EBDA367AC2BC80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RingMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A7BD81229AA65F600BC248C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7BD83929AA6D4300BC248C /* LoginViewController.m in Sources */,
+				7AEED66129B2257200D024D6 /* AuthManager.swift in Sources */,
+				7AA0FB1E29B2218100BA9A09 /* ExpandView.swift in Sources */,
+				7AA0FB1729B2215200BA9A09 /* ViewSwitcher.swift in Sources */,
+				7A473B3129AFDE490061A5FD /* Extensions.swift in Sources */,
+				7A473B3329AFDEEB0061A5FD /* NoInsetHostingView.swift in Sources */,
+				7AA0FB1329B2215200BA9A09 /* SettingsView.swift in Sources */,
+				7A473B3929B093010061A5FD /* AuthMethods.swift in Sources */,
+				7AA0FB1929B2216100BA9A09 /* ChatViewModel.swift in Sources */,
+				7A9EB14629C21A85000DC271 /* NewMessageView.swift in Sources */,
+				7A7BD83229AA69E600BC248C /* Blur.swift in Sources */,
+				7AA0FB1229B2215200BA9A09 /* NewConversationView.swift in Sources */,
+				7A9EB14229C21A3A000DC271 /* AddFriendView.swift in Sources */,
+				7AA0FB1029B2215200BA9A09 /* ChatCards.swift in Sources */,
+				7AA0FB1529B2215200BA9A09 /* Conversation.swift in Sources */,
+				7A7BD82629AA65F800BC248C /* RingMate.xcdatamodeld in Sources */,
+				7A7BD82329AA65F800BC248C /* Persistence.swift in Sources */,
+				7AA0FB1429B2215200BA9A09 /* StatusView.swift in Sources */,
+				7AA0FB1129B2215200BA9A09 /* ChatsView.swift in Sources */,
+				7A7BD83429AA6D1A00BC248C /* RegistrationView.swift in Sources */,
+				7AA0FB1629B2215200BA9A09 /* CommunityView.swift in Sources */,
+				7AA0FB0729B2207800BA9A09 /* MainPageView.swift in Sources */,
+				7A7BD81C29AA65F600BC248C /* ContentView.swift in Sources */,
+				7AA0FB2229B221B700BA9A09 /* RecentChats.swift in Sources */,
+				7AA0FB2329B221B700BA9A09 /* Message.swift in Sources */,
+				7A7BD82F29AA672C00BC248C /* LoginPageView.swift in Sources */,
+				7A7BD81A29AA65F600BC248C /* RingMateApp.swift in Sources */,
+				7AA0FB1D29B2218100BA9A09 /* TabButton.swift in Sources */,
+				7A473B3529AFDF070061A5FD /* NSView+Image.swift in Sources */,
+				7A473B3729AFDF980061A5FD /* NSImagetoJPEG.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7A7BD82829AA65F800BC248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A7BD82929AA65F800BC248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7A7BD82B29AA65F800BC248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB46B6E69F65B88D7E8E1DCD /* Pods-RingMate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RingMate/RingMate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RingMate/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V43N6T968;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RingMate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshumali.RingMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RingMate/Headers/RingMate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A7BD82C29AA65F800BC248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621CE562101CE85B141B09CD /* Pods-RingMate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RingMate/RingMate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RingMate/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V43N6T968;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RingMate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshumali.RingMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RingMate/Headers/RingMate-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A7BD81129AA65F600BC248C /* Build configuration list for PBXProject "RingMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7BD82829AA65F800BC248C /* Debug */,
+				7A7BD82929AA65F800BC248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7BD82A29AA65F800BC248C /* Build configuration list for PBXNativeTarget "RingMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7BD82B29AA65F800BC248C /* Debug */,
+				7A7BD82C29AA65F800BC248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A7BD82429AA65F800BC248C /* RingMate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A7BD82529AA65F800BC248C /* RingMate.xcdatamodel */,
+			);
+			currentVersion = 7A7BD82529AA65F800BC248C /* RingMate.xcdatamodel */;
+			path = RingMate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A7BD80E29AA65F600BC248C /* Project object */;
+}
