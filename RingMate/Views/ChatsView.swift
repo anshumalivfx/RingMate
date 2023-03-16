@@ -8,72 +8,75 @@
 import SwiftUI
 
 struct ChatsView: View {
-    @EnvironmentObject var chatsData : ChatViewModel
     @State var showNewMessage: Bool = false
     @State var showAddFriends: Bool = false
+    @Environment(\.colorScheme) var colorScheme
+    
+    @EnvironmentObject var homeData: ChatViewModel
+    
     var body: some View {
+      // Side Tab View...
+      VStack {
         
-        VStack {
-           
-            HStack {
-                Text("Chats")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                Spacer()
-                Button {
-                    showAddFriends = true
-                } label: {
-                    Image(systemName: "person.fill.badge.plus")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                    
-                }
-                .buttonStyle(.plain)
-                Button {
-                    showNewMessage = true
-                } label: {
-                    Image(systemName: "square.and.pencil")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                    
-                }
-                .buttonStyle(.plain)
+          HStack {
+              Text("Chats")
+                  .font(.largeTitle)
+                  .fontWeight(.heavy)
+              Spacer()
+              Button {
+                  showAddFriends = true
+              } label: {
+                  Image(systemName: "person.fill.badge.plus")
+                      .font(.title2)
+                      .foregroundColor(.primary)
+                  
+              }
+              .buttonStyle(.plain)
+              Button {
+                  showNewMessage = true
+              } label: {
+                  Image(systemName: "square.and.pencil")
+                      .font(.title2)
+                      .foregroundColor(.primary)
+                  
+              }
+              .buttonStyle(.plain)
 
-            }
-            .padding()
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .foregroundColor(.gray)
-                TextField("Search....", text: $chatsData.search)
-                    .textFieldStyle(.plain)
-            }
-            .padding(.vertical,9)
-            .padding(.horizontal)
-            .background(Color.primary.opacity(0.15))
-            .cornerRadius(10)
-            .padding()
-            List(selection: $chatsData.selectedRecentMessage)
-            {
-                ForEach(chatsData.msg) { message in
-                    NavigationLink {
-                        Conversation(user: message)
-                    }
-                    
-                label: {
-                        ChatCards(recentMessage: message)
-                    }
-                }
-            }
-            .listStyle(.sidebar)
-            
-        }
-        .sheet(isPresented: $showAddFriends, content: {
-            AddFriendView()
-        })
-        .sheet(isPresented: $showNewMessage) {
-            NewMessageView()
-        }
+          }
+          .padding()
         
+        
+        HStack {
+          Image(systemName: "magnifyingglass")
+            .foregroundColor(.gray)
+          
+          TextField("Search", text: $homeData.search)
+            .textFieldStyle(PlainTextFieldStyle())
         }
+        .searchBar()
+        .padding(10)
+        
+        List(selection: $homeData.selectedRecentMessage) {
+        
+          ForEach(homeData.messages) { message in
+            
+            // Message View...
+            NavigationLink(
+              destination: DetailView(user: message),
+              label: {
+                RecentMessageCardView(recentMessage: message)
+              })
+          }
+        }
+        .listStyle(SidebarListStyle())
+      }
+      .sheet(isPresented: $showAddFriends) {
+          AddFriendView()
+      }
+      .sheet(isPresented: $showNewMessage) {
+          NewMessageView()
+      }
+    }
+    
         
 }

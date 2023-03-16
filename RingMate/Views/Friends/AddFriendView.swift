@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct AddFriendView: View {
-    @State var searchText: String = ""
     @Environment(\.presentationMode) var presentationMode
+    @State var tabSelection = 0
+    @State var frameHeight: CGFloat = 200
     var body: some View {
         VStack {
             HStack {
@@ -27,26 +28,44 @@ struct AddFriendView: View {
                 Spacer()
             }
             
-            HStack {
-                TextField("Enter Username", text: $searchText)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .padding(.horizontal)
+            TabView(selection: $tabSelection) {
+                SendFriendRequestView()
+                    .tabItem {
+                        Text("Add New Friend")
+                    }
+                    .tag(1)
+                RecievedFriendRequests()
+                    .tabItem {
+                        Text("Recieved Friend Requests")
+                    }
+                    .tag(2)
             }
             
-            Button {
+            .tabViewStyle(.automatic)
+            
+            .animation(.easeInOut(duration: 0.2), value: tabSelection) // 2
+                .transition(.slide)
                 
-            } label: {
-                HStack {
-                    Image(systemName: "person.fill.badge.plus")
-                    Text("Send Friend Request")
+        }
+        .onChange(of: tabSelection) { newValue in
+            switch(tabSelection){
+            case 1:
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    frameHeight = 200
+                }
+            case 2:
+                withAnimation(.easeInOut(duration: 0.5)) {
+                    frameHeight = 600
+                }
+            default:
+                withAnimation(.easeInOut(duration: 0.5)) {
+                    frameHeight = 200
                 }
             }
-            .padding(.all)
             
-            
-
         }
-        .frame(width: 500)
+        .frame(width: 500,height: frameHeight)
+        
     }
 }
 

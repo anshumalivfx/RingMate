@@ -19,11 +19,3 @@ struct RecentChats : Identifiable {
 }
 
 
-var chats : [RecentChats] = [
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-    RecentChats(lastMessage: "Hello", lastMessageTime: "23:50", pendingMessages: "69", userName: "Ben Dover", userImage: "bendover", userPhone: "+917777733", allMessage: BenDOVER_CHATS.shuffled()),
-]

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A24908129C245FB008AD3A4 /* RecievedFriendRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24908029C245FB008AD3A4 /* RecievedFriendRequests.swift */; };
+		7A24908629C24ABD008AD3A4 /* BasicNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24908529C24ABD008AD3A4 /* BasicNotifications.swift */; };
+		7A24908829C34C73008AD3A4 /* SendFriendRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24908729C34C73008AD3A4 /* SendFriendRequestView.swift */; };
+		7A24908C29C35826008AD3A4 /* RecievedFriendRequestsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24908B29C35826008AD3A4 /* RecievedFriendRequestsCard.swift */; };
+		7A24909229C36F3A008AD3A4 /* ChatViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24909129C36F3A008AD3A4 /* ChatViewModifiers.swift */; };
+		7A24909529C36FB2008AD3A4 /* ChatViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24909429C36FB2008AD3A4 /* ChatViews.swift */; };
 		7A473B3129AFDE490061A5FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3029AFDE490061A5FD /* Extensions.swift */; };
 		7A473B3329AFDEEB0061A5FD /* NoInsetHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3229AFDEEB0061A5FD /* NoInsetHostingView.swift */; };
 		7A473B3529AFDF070061A5FD /* NSView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A473B3429AFDF070061A5FD /* NSView+Image.swift */; };
@@ -58,6 +64,12 @@
 
 /* Begin PBXFileReference section */
 		621CE562101CE85B141B09CD /* Pods-RingMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingMate.release.xcconfig"; path = "Target Support Files/Pods-RingMate/Pods-RingMate.release.xcconfig"; sourceTree = "<group>"; };
+		7A24908029C245FB008AD3A4 /* RecievedFriendRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedFriendRequests.swift; sourceTree = "<group>"; };
+		7A24908529C24ABD008AD3A4 /* BasicNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNotifications.swift; sourceTree = "<group>"; };
+		7A24908729C34C73008AD3A4 /* SendFriendRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFriendRequestView.swift; sourceTree = "<group>"; };
+		7A24908B29C35826008AD3A4 /* RecievedFriendRequestsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedFriendRequestsCard.swift; sourceTree = "<group>"; };
+		7A24909129C36F3A008AD3A4 /* ChatViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModifiers.swift; sourceTree = "<group>"; };
+		7A24909429C36FB2008AD3A4 /* ChatViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViews.swift; sourceTree = "<group>"; };
 		7A473B3029AFDE490061A5FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A473B3229AFDEEB0061A5FD /* NoInsetHostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInsetHostingView.swift; sourceTree = "<group>"; };
 		7A473B3429AFDF070061A5FD /* NSView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Image.swift"; sourceTree = "<group>"; };
@@ -120,6 +132,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A24908229C24707008AD3A4 /* VideoRenderingLibC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoRenderingLibC;
+			sourceTree = "<group>";
+		};
+		7A24908329C24A97008AD3A4 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				7A24908429C24AA1008AD3A4 /* Notifications */,
+				7A24909429C36FB2008AD3A4 /* ChatViews.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		7A24908429C24AA1008AD3A4 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7A24908529C24ABD008AD3A4 /* BasicNotifications.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		7A24908A29C35735008AD3A4 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				7A24908B29C35826008AD3A4 /* RecievedFriendRequestsCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		7A24909029C36F29008AD3A4 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				7A24909129C36F3A008AD3A4 /* ChatViewModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		7A473B2D29AFDC020061A5FD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +222,9 @@
 		7A7BD81829AA65F600BC248C /* RingMate */ = {
 			isa = PBXGroup;
 			children = (
+				7A24909029C36F29008AD3A4 /* ViewModifiers */,
+				7A24908229C24707008AD3A4 /* VideoRenderingLibC */,
+				7A24908329C24A97008AD3A4 /* Extras */,
 				7A7BD83529AA6D2300BC248C /* Headers */,
 				7AA0FB1F29B221AD00BA9A09 /* DataModels */,
 				7AA0FB1A29B2217300BA9A09 /* Components */,
@@ -248,6 +303,8 @@
 		7A9EB14729C225F6000DC271 /* FriendsRequests */ = {
 			isa = PBXGroup;
 			children = (
+				7A24908029C245FB008AD3A4 /* RecievedFriendRequests.swift */,
+				7A24908729C34C73008AD3A4 /* SendFriendRequestView.swift */,
 			);
 			path = FriendsRequests;
 			sourceTree = "<group>";
@@ -255,6 +312,7 @@
 		7AA0FB1A29B2217300BA9A09 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7A24908A29C35735008AD3A4 /* Cards */,
 				7AA0FB1C29B2218100BA9A09 /* ExpandView.swift */,
 				7AA0FB1B29B2218100BA9A09 /* TabButton.swift */,
 			);
@@ -297,6 +355,8 @@
 			dependencies = (
 			);
 			name = RingMate;
+			packageProductDependencies = (
+			);
 			productName = RingMate;
 			productReference = 7A7BD81629AA65F600BC248C /* RingMate.app */;
 			productType = "com.apple.product-type.application";
@@ -326,6 +386,8 @@
 				Base,
 			);
 			mainGroup = 7A7BD80D29AA65F600BC248C;
+			packageReferences = (
+			);
 			productRefGroup = 7A7BD81729AA65F600BC248C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,6 +446,8 @@
 				7AA0FB1729B2215200BA9A09 /* ViewSwitcher.swift in Sources */,
 				7A473B3129AFDE490061A5FD /* Extensions.swift in Sources */,
 				7A473B3329AFDEEB0061A5FD /* NoInsetHostingView.swift in Sources */,
+				7A24908C29C35826008AD3A4 /* RecievedFriendRequestsCard.swift in Sources */,
+				7A24908129C245FB008AD3A4 /* RecievedFriendRequests.swift in Sources */,
 				7AA0FB1329B2215200BA9A09 /* SettingsView.swift in Sources */,
 				7A473B3929B093010061A5FD /* AuthMethods.swift in Sources */,
 				7AA0FB1929B2216100BA9A09 /* ChatViewModel.swift in Sources */,
@@ -392,6 +456,7 @@
 				7AA0FB1229B2215200BA9A09 /* NewConversationView.swift in Sources */,
 				7A9EB14229C21A3A000DC271 /* AddFriendView.swift in Sources */,
 				7AA0FB1029B2215200BA9A09 /* ChatCards.swift in Sources */,
+				7A24908629C24ABD008AD3A4 /* BasicNotifications.swift in Sources */,
 				7AA0FB1529B2215200BA9A09 /* Conversation.swift in Sources */,
 				7A7BD82629AA65F800BC248C /* RingMate.xcdatamodeld in Sources */,
 				7A7BD82329AA65F800BC248C /* Persistence.swift in Sources */,
@@ -401,13 +466,16 @@
 				7AA0FB1629B2215200BA9A09 /* CommunityView.swift in Sources */,
 				7AA0FB0729B2207800BA9A09 /* MainPageView.swift in Sources */,
 				7A7BD81C29AA65F600BC248C /* ContentView.swift in Sources */,
+				7A24909229C36F3A008AD3A4 /* ChatViewModifiers.swift in Sources */,
 				7AA0FB2229B221B700BA9A09 /* RecentChats.swift in Sources */,
 				7AA0FB2329B221B700BA9A09 /* Message.swift in Sources */,
 				7A7BD82F29AA672C00BC248C /* LoginPageView.swift in Sources */,
 				7A7BD81A29AA65F600BC248C /* RingMateApp.swift in Sources */,
 				7AA0FB1D29B2218100BA9A09 /* TabButton.swift in Sources */,
+				7A24909529C36FB2008AD3A4 /* ChatViews.swift in Sources */,
 				7A473B3529AFDF070061A5FD /* NSView+Image.swift in Sources */,
 				7A473B3729AFDF980061A5FD /* NSImagetoJPEG.swift in Sources */,
+				7A24908829C34C73008AD3A4 /* SendFriendRequestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

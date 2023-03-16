@@ -111,34 +111,22 @@ struct ExpandView: View {
 
                 }
                 
-                Picker(selection: $chatData.pickedSelection) {
-                    Text("Media")
-                        .tag("Media")
-                    
-                    Text("Docs")
-                        .tag("Docs")
-                    Text("Link")
-                        .tag("Link")
-                } label: {
-                    Text("Picker")
-                }
-                .pickerStyle(.segmented)
-                .labelsHidden()
-                .padding(.vertical)
+//                Picker(selection: $chatData.pickedSelection) {
+//                    Text("Media")
+//                        .tag("Media")
+//
+//                    Text("Docs")
+//                        .tag("Docs")
+//                    Text("Link")
+//                        .tag("Link")
+//                } label: {
+//                    Text("Picker")
+//                }
+//                .pickerStyle(.segmented)
+//                .labelsHidden()
+//                .padding(.vertical)
 
-                ScrollView {
-                    if chatData.pickedSelection == "Media"{
-                        
-                    }
-                    
-                    else {
-                        withAnimation {
-                            Text("No \(chatData.pickedSelection)")
-                        }
-                        .animation(.linear, value: 10)
-                        
-                    }
-                }
+                
                 
                 Spacer()
                 
